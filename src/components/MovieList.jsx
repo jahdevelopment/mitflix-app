@@ -7,7 +7,7 @@ const MovieList = (props) => {
       <div className="title">
         <h1>Movies</h1>
         <div className="titles-wrapper">
-          {movies.map(movie => {
+          {movies.map((movie) => {
             return <Movie key={movie.id} movie={movie} />
           })}
         </div>

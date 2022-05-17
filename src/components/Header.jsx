@@ -1,6 +1,6 @@
 import SearchForm from "./SearchForm";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header className="header">
       <a href="/">
@@ -10,7 +10,7 @@ const Header = () => {
           border="0"
         />
       </a>
-      <SearchForm />
+      <SearchForm searchMovies={props.searchMovies} />
     </header>
   );
 };
